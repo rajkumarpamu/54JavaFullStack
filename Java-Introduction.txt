@@ -1,0 +1,44 @@
+ByteCodeVerifer
+
+D:\54-JavaFullStack\New folder>java App
+Error: LinkageError occurred while loading main class App
+        java.lang.ClassFormatError: Truncated class file
+
+
+Linking:
+=======
+
+Preperation of data:
+ Variables will be intialized with default values (static variables or static block)
+
+
+ Initialzation
+ -------------
+ Variables will be intialized with actual values (static variables or static block)
+
+
+ BootStrap ClassLoader:
+ ----------------------
+ BootStrap Class Path:
+ C:\Program Files\Java\jdk-1.8\jre\lib
+
+ Application Class Loader
+ --------------------------
+ It loads .class from the classpath
+
+ Extension Class Loader
+ -----------------------
+ C:\Program Files\Java\jdk-1.8\jre\lib\ext.
+
+ package com.ashokit.demo.strings;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		
+		System.out.println("String ClassLoader is :"+String.class.getClassLoader());
+		System.out.println("Test ClassLoader is :"+Test.class.getClassLoader());
+	}
+}
