@@ -1,0 +1,132 @@
+Demo.java
+
+compile
+
+Demo.class (Intermediate FIle) (Byte code Ins)
+
+JVM
+
+
+
+CLass Loader Subsystem
+
+JVM Memory
+
+Execution Engine
+
+CLass Loader Subsystem
+
+Loading
+
+It will create an object of type  Class
+Note:
+Class is predefined class/object in java
+
+Any runtime info about the class we can getv it through Class Object
+
+package com.ashokit.demo.strings;
+
+;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Test test = new Test();
+		
+		Class cls= test.getClass();
+		System.out.println(cls.getName());
+		System.out.println(cls.getSuperclass());
+		
+
+	}
+}
+
+
+Linking
+
+Preperation Of data:
+------------------------
+Default values
+
+Initialization
+--------------
+
+Class Loader sub system will initialize all the stativ variable or statib block with actual values
+
+JVM Memory:
+---------
+
+Heap Area
+--------
+For all objects in java memory will be alocated in Heap area.
+
+package test;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Test test = new Test();
+		System.out.println(test);
+
+	}
+}
+Result:
+
+test.Test@515f550a
+
+
+Method Area
+------------
+Fully Qualified name of the class
+variables
+Methods
+Modfiers
+super class info
+isInterface()
+inEnum()
+
+Java Stack(FIFO):
+--------------
+All the methods will be rgistered here
+
+
+PC Register
+-------------
+It represent currently executing instruction address
+
+Native Stack (FIFO)
+-------------
+Non - Java 
+
+
+Execution Engine:
+------------------
+
+ Interpreter:
+ -------------
+ Execute code line by line
+
+
+ JIT Compiler: 
+--------------
+ Just In Time Compiler
+
+ Code will be transformed into native language
+
+
+ Garbage Collector
+-----------------
+
+
+Native Interface
+
+
+Native Libraries
+
+
+
+
+
+
+
+
