@@ -1,0 +1,108 @@
+Java class based object orienetd programming language
+
+If there is a class there will be an object
+If no class no object
+For a class we can create any number of objects
+
+Syntax of a class:
+-------------------
+
+
+package statement; //optional 
+import statement; //optional 
+public class <classname>{
+	
+
+}
+
+Step-1
+------
+Save the class with Classname.java
+
+Step-2:
+-----
+
+Open cmd line
+
+javac -> cmd to comipile /generate .class file
+
+Syantx:
+----
+In cmd line
+javac <Filename.java>
+
+
+Step-3:
+------
+java -> cmd to start  JVM
+
+
+syntax:
+--------
+In cmd line
+java <classname>
+
+Environmnt:
+------------
+Any text editior/IDE (STS, Eclipse,INtelliJ,NetBeans,Myeclipse)
+
+All keywords should be represented in small case letters
+
+public class FirstProgram
+{
+ public static void main(String[] args){
+       System.out.print("welcome to java");
+  }
+
+}
+
+Save the file with  FirstProgram.java
+
+
+D:\54-JavaFullStack>javac FirstProgram.java
+
+D:\54-JavaFullStack>java FirstProgram
+welcome to java
+D:\54-JavaFullStack>
+
+
+
+Example 2:
+
+ class SecondProgram{
+
+  public static void main(String ar[]){
+
+      System.out.print("Hello World");
+
+  }
+
+}
+
+D:\54-JavaFullStack>javac App.java
+
+D:\54-JavaFullStack>java SecondProgram
+Hello World
+D:\54-JavaFullStack>
+
+
+Example 3:
+
+ public class String{
+  public static void main(String ar[]){
+      System.out.print("Hello World");
+
+  }
+}
+
+
+D:\54-JavaFullStack>javac String.java
+
+D:\54-JavaFullStack>java String
+Error: Main method not found in class String, please define the main method as:
+   public static void main(String[] args)
+or a JavaFX application class must extend javafx.application.Application
+
+D:\54-JavaFullStack>
+
+
