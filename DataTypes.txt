@@ -1,0 +1,119 @@
+Data types in java:
+-------------------
+
+10  --Integer
+10.5  -- Floating
+c     --  char
+raj   --String 
+
+
+Primitive                   NO primitive
+Single Value                Multiple values
+
+
+Integer category
+=================
+
+-ve to +ve without decimal
+
+byte
+short
+int
+long
+
+
+Floating point category
+----------------------
+-ve to +ve with decimal
+
+float
+double
+
+charcter category
+-----------------
+Reprsent single charcter
+
+char
+
+
+boolean category
+-----------------
+reprsent true or false
+
+boolean
+
+true,false
+
+
+Signed Data type:
+---------------
+
+byte
+short
+int
+long
+float
+double
+
+
+Unsigned data types
+------------------------
+
+char  
+boolean
+
+
+Memory Allocation:
+------------------
+
+byte   1 byte (1 byte = 8 bits) (-128 to +127)
+short  2 bytes (2 bytes = 16 bits )(-32768 0 32767)
+int    4 bytes
+long   8 bytes
+
+float  4 bytes
+double 8 bytes
+
+char   2 bytes
+boolean 1 byte /  JVM Dependent (true or false)
+
+Range:
+------
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Byte.SIZE);
+		System.out.println(Byte.MIN_VALUE);
+		System.out.println(Byte.MAX_VALUE);
+
+		System.out.println(Math.pow(2, 8));
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Short.SIZE);
+		System.out.println(Short.MIN_VALUE);
+		System.out.println(Short.MAX_VALUE);
+
+		System.out.println(Math.pow(2, 16));
+
+	}
+
+}
+
+
+
+
+
