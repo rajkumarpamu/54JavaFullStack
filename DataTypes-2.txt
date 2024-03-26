@@ -1,0 +1,287 @@
+Data types in java:
+-------------------
+
+10  --Integer
+10.5  -- Floating
+c     --  char
+raj   --String 
+
+
+Primitive                   NO primitive
+Single Value                Multiple values
+
+
+Integer category
+=================
+
+-ve to +ve without decimal
+
+byte
+short
+int
+long
+
+
+Floating point category
+----------------------
+-ve to +ve with decimal
+
+float
+double
+
+charcter category
+-----------------
+Reprsent single charcter
+
+char
+
+
+boolean category
+-----------------
+reprsent true or false
+
+boolean
+
+true,false
+
+
+Signed Data type:
+---------------
+
+byte
+short
+int
+long
+float
+double
+
+
+Unsigned data types
+------------------------
+
+char  
+boolean
+
+
+Memory Allocation:
+------------------
+
+byte   1 byte (1 byte = 8 bits) (-128 to +127)
+short  2 bytes (2 bytes = 16 bits )(-32768 0 32767)
+int    4 bytes
+long   8 bytes
+
+float  4 bytes
+double 8 bytes
+
+char   2 bytes
+boolean 1 byte /  JVM Dependent (true or false)
+
+Range:
+------
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Byte.SIZE);
+		System.out.println(Byte.MIN_VALUE);
+		System.out.println(Byte.MAX_VALUE);
+
+		System.out.println(Math.pow(2, 8));
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Short.SIZE);
+		System.out.println(Short.MIN_VALUE);
+		System.out.println(Short.MAX_VALUE);
+
+		System.out.println(Math.pow(2, 16));
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+		System.out.println(Byte.SIZE);
+		System.out.println(Short.SIZE);
+		System.out.println(Integer.SIZE);
+		System.out.println(Long.SIZE);
+		System.out.println(Float.SIZE);
+		System.out.println(Double.SIZE);
+		System.out.println(Character.SIZE);
+		//0-65535 (Unicode Programmung Lnguage)
+		//0-255 (a-z A_Z 0-9 special Symbols)
+		System.out.println(Math.pow(2, 16));
+	}
+
+}
+
+
+How to declare a variable?
+--------------------------
+
+
+Variable Decleration:
+---------------------
+syntax:
+------
+
+datatype variableName;
+//Name to the memory location
+
+byte age; --  1 byte 
+short empId; --2  bytes
+
+float percentage;
+double salary;
+
+char grade;
+
+
+boolean result;
+
+If we declare a variable and we if we dont initialize it , they will be aoutomatiocally intuialized with defailt values
+
+INteger Category:
+------------------
+
+0
+
+
+Floating Point:
+---------------
+
+0.0
+
+Charcter :
+--------
+
+space
+
+
+Booelan:
+--------
+
+false
+
+
+Variable Intialization:
+-----------------------
+
+Assigning value to variable for the first time 
+
+
+
+   byte age;
+   age=30;
+
+
+   byte age=30;
+
+
+Example:
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte age;
+		age = 30;
+
+		System.out.println(age);
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte age = 30;
+
+		System.out.println(age);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte age = 30;
+		double percentage = 99.8;
+		char grade = 'E';
+		boolean result = true;
+
+		System.out.println(age);
+		System.out.println(percentage);
+		System.out.println(grade);
+		System.out.println(result);
+	}
+
+}
+
+
+Variable Assigment:
+-------------------
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		//Decleration and Initialization 
+		byte age = 30;
+		System.out.println("Befroe :"+age);
+		
+		//variable Assignmnet
+		age=31;
+		System.out.println("After :"+age);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
