@@ -1,0 +1,190 @@
+Integer category:
+----------------
+
+byte   1 byte   = 8 bits
+short  2 bytes  = 16 bits
+int    4 bytes  = 32 bits
+long   8 bytes  = 64 bits
+
+
+int : Default Type
+0    : Default value
+
+
+Range
+----
+
+1 byte = 8 bits
+
+  noofBits-1       noofBits-1
+-2         0      2            -1
+
+-128        0      127
+-32768      0      32767
+
+
+Floating Point Category:
+--------------------------
+
+float    4 bytes
+double   8 bytes
+
+Default type: double
+Default value : 0.0
+
+
+Charcter Category:
+--------------------
+
+
+char   2 Bytes 
+
+
+     noofBits
+    2            -1
+
+default value is : space
+
+Singel Quote ('')
+
+Boolean Category:
+------------------
+
+
+boolean
+
+only 2 value (true / false)
+
+Default value : false
+
+Variable decleration:
+----------------------
+
+
+datatype variable;
+
+byte age;
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	byte b;
+	double d;
+	char c;
+	boolean b1;
+
+	public static void main(String[] args) {
+
+		FirstProgram firstProgram = new FirstProgram();
+		System.out.println(firstProgram.b);
+		System.out.println(firstProgram.d);
+		System.out.println(firstProgram.c);
+		System.out.println(firstProgram.b1);
+
+	}
+
+}
+
+Variable Intialization:
+-------------------------
+
+Assiggning value to a variable for the first time
+
+
+byte age;
+age = value;
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte age = 30;
+		System.out.println(age);
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte age;
+		
+		age=30;
+		
+		System.out.println(age);
+
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		// Dec
+		byte age;
+
+		// Intitialization
+		age = 30;
+		System.out.println(age);
+
+		// Assigment-1
+		age = 31;
+		System.out.println(age);
+		// Assigment-2
+		age = 32;
+		System.out.println(age);
+
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Long.MAX_VALUE);
+		long number = 9223372036854775807L;
+		System.out.println(number);
+
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		
+		float salary= 100000.0F;
+		System.out.println(salary);
+		
+	}
+
+}
+
+
