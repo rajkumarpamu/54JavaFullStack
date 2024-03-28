@@ -1,0 +1,268 @@
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		// var dec
+		char grade;
+		// var initialization
+		grade = 'A';
+		System.out.println(grade);
+		// Assigment
+		grade = 'E';
+		grade = 'B';
+		grade = 'C';
+		grade = 'D';
+		System.out.println(grade);
+
+	}
+
+}
+
+
+Rules Of Indetifiers:
+----------------------
+
+  byte age= 30;
+
+  byte => data type
+
+  age  -> variable/Identifier
+
+  =    -> Assigment Operator
+
+  30   -> value
+
+
+1)An identifier should not start with a number
+
+ ex: int 1age; //Invalid CE
+
+2)An identifier can be alpha numeric
+
+ex:int age123;  //Valid
+
+3)An identifier should not contain any special symbols except
+ $ and _
+
+ 		int age*123;  //Invalid
+		int age&123;  // //Invalid
+		int age_123;   //Valid
+		int age$123; //Valid
+
+		int $age$123; //Valid
+
+4)An identifier should be a meaningful name
+
+
+   double salary;
+   double sal;
+
+   double s;
+
+5)Length of the Identider should not exceed 16 characters
+
+int salAshokIT;
+
+
+Syntax:
+-------
+main()
+
+public  class <ClassName>
+{
+	
+	public static void main(String ar[]){
+
+    // Logic
+
+	}
+}
+
+ClassName:
+----------
+
+Capitalized Convention
+
+
+FirstProgram
+Age
+String
+System
+
+AbstractCellEditor
+
+Variable Name:
+--------------
+
+Camel case
+
+age
+sumOfTwoNumbers
+
+
+Constants:
+---------
+
+  AGE
+   MAX_VALUE
+   MIN_VALUE
+
+
+Method:
+---------
+
+age()
+test()
+cal()
+
+
+
+Age
+age
+age()
+AGE
+
+Age()  - Constructor
+
+sum
+Sum
+SUM
+sum()
+Sum()
+
+Comments:
+---------
+
+Non executable statements
+
+Single Line :
+--------------
+
+//
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		// This is my first program on comments
+		System.out.println("statement-1");
+		System.out.println("statement-2");
+		// System.out.println("statement-3");
+		System.out.println("statement-4");
+		System.out.println("statement-5");
+
+	}
+
+}
+
+
+Multi Line Commnet:
+------------------
+
+/*  -start
+*
+*
+*
+*/  -end
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println("statement-1");
+		System.out.println("statement-2");
+		/*
+		 * System.out.println("statement-3"); 
+		 * System.out.println("statement-4");
+		 */
+		System.out.println("statement-5");
+	}
+
+}
+
+Document Line COmments:
+-------------------------
+/**
+
+*/
+
+
+D:\Adv-Java-Dec\54-JavaFullStack\src\com\demo\corejava\training>javadoc FirstProgram.java
+javadoc *.java
+
+
+package com.demo.corejava.training;
+
+/**
+ * 
+ * @author Raj Kumar
+ * @version 1.8
+ * @since   28-03-2024
+ * 
+ *
+ */
+public class FirstProgram {
+	
+	/**
+	 * 
+	 * @param a - first Input Parameter
+	 * @param b - first Input Parameter
+	 * @Desc   this is my first method
+	 */
+	public void m1(int a,  int b) {
+		
+	}
+
+	
+
+	public static void main(String[] args) {
+
+		System.out.println("statement-1");
+		System.out.println("statement-2");
+		System.out.println("statement-5");
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
