@@ -1,0 +1,125 @@
+Integer category:
+================
+
+-ve to +ve
+
+byte  1 byte
+short  2 bytes
+int    4 bytes
+long   8 bytes
+  
+
+
+Floating Point Categry:
+----------------------
+
+float   4 buytes
+double  8 bytes
+
+Characrter Category:
+------------------
+
+char    2 bytes
+
+
+Boolean category:
+-------------------
+
+boolean   
+
+
+
+
+
+
+1 bytes = 8 bits
+
+  n-1              n-1
+-2          0    2           -1
+
+
+-128 0 127
+
+
+
+
+
+
+class based object orinted programming language
+
+
+why objects? public class <classname>
+ {
+
+
+
+
+ }
+
+ Reusablity
+
+
+
+
+
+public class FirstProgram
+{
+	
+	public static void main(String[] rajkumar){
+
+		
+       byte age=30;
+       char grade='A';
+       boolean result=true;
+       double percentage = 99.6;
+       String name="Raj Kumar";
+
+ 		System.out.println("Name is :"+name);
+        System.out.println("Age is :"+age);
+        System.out.println("Grade is :"+grade);
+        System.out.println("Result is :"+result);
+        System.out.println("Percentage is :"+percentage);
+
+
+
+	}
+}
+
+
+
+
+
+
+Operators:
+----------
+Special Symbols tio perform some operation
+
+Unary Operators:
+Any special symbol applied on single operand 
+
+ex:
+
+-a
+
+
+Binary Operators:
+Any special symbol applied on 2 operands 
+
+a+b
+
+
+Ternary Operators:]
+Any special symbol applied on 3 operands 
+
+
+
+
+
+
+
+
+
+
+
+
+
