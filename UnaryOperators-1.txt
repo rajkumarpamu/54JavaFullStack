@@ -1,0 +1,231 @@
+Why Operators?
+
++ (Arithemetic Addition)
+
+
+
+UnaryOperator
+------------
+
+ To peform operation on a single operand
+
+ Unary Minus:
+ -----------
+
+ Reprsent a negative integer
+
+ package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 100;
+		System.out.println("a value :"+a);
+		System.out.println(-(a));
+
+	}
+
+}
+
+
+Logical Not operator(!):
+----------------------
+
+true to false
+false to true
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		boolean result = true;
+		System.out.println(result);
+		System.out.println(!(result));
+
+	}
+
+}
+
+
+Increment/Dec Operators:
+-----------------------
+
+Increment Operator:(++)
+-------------------
+
+Post Inc
+a++
+First use the data/result and then increment
+
+Pre Inc
+++a
+First Increment the data and then use result
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int num=10;
+		num=num+1;
+		System.out.println(num);
+		
+		int n=10;
+		n=++n;
+		System.out.println(n);
+
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int num=10;
+		num=num+1;
+		System.out.println(num);
+		
+		int n=10;
+		n=++n; //Pre Increment
+		System.out.println(n);
+
+		
+		int x=10;
+		x=x++;//Post Increment
+		System.out.println(x);
+
+	}
+
+}
+
+Result:
+11
+11
+10
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int num = 10;
+		num = num - 1;
+		System.out.println(num);
+
+		int n = 10;
+		n = --n; // Pre Decrement
+		System.out.println(n);
+
+		int x = 10;
+		x = x--;// Post Decrement
+		System.out.println(x);
+
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int num1 = 10;
+		int num2=num1++;
+		
+		System.out.println(num1);
+		System.out.println(num2);
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int num1 = 10;
+		int num2=--num1;
+		int num3=++num1;
+		
+		System.out.println(num1);//10
+		System.out.println(num2);//10
+		System.out.println(num3);//11
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int num1 = 10;
+		int num2=num1-- ;
+		int num3=num1-- + num2--;
+		
+		System.out.println(num1);//8
+		System.out.println(num2);//9
+		System.out.println(num3);//19
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int num1 = 10;
+		int num2=--num1 ;
+		int num3=num1-- * ++num2;
+		
+		System.out.println(num1);//8
+		System.out.println(num2);//10
+		System.out.println(num3);//90
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+BinaryOperator
+
+
+TernaryOperators
+
+
