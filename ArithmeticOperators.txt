@@ -1,0 +1,249 @@
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int num1 = 10;
+		int num2=--num1 ;
+		int num3=num1-- * ++num2;
+		int num4=num1-- +  ++num2 + num3--;
+		
+		System.out.println(num1);//7
+		System.out.println(num2);//11
+		System.out.println(num3);//89
+		System.out.println(num4);//109
+
+	}
+
+}
+
+
+
+Unary Minus (-)
+
+Logical Not  (!)
+
+Incre ment Operator : ++
+
+Decrement Operator  : --
+
+
+Binary Operator:
+-----------------
+
+Arithmetic Operator:
+---------------------
+
++  - Addition
+
+-  - Substraction
+ 
+*  -m Multiplication
+
+/  - DIvision
+
+%  - modulus
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int num1 = 50;
+		int num2 = 20;
+
+		System.out.println(num1 + num2); // 70
+		System.out.println(num1 - num2); // 30
+		System.out.println(num1 * num2); // 1000
+		System.out.println(num1 / num2); // Quotient
+		System.out.println(num1 % num2); // Reminder
+
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte n1 = 10;
+		byte n2 = 20;
+
+		int result = n1 + n2;
+
+		System.out.println(result);
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		short n1 = 10;
+		byte n2 = 20;
+
+		int result = n1 + n2;
+
+		System.out.println(result);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int n1 = 10;
+		double n2 = 20.0;
+
+		double result = n1 + n2;
+
+		System.out.println(result);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		char n1 = 'a';
+		char n2 = 'b';
+
+		int result = n1 + n2;
+
+		System.out.println(result);
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(10 / 3.0);
+		System.out.println(10 / 3.0F);
+	}
+
+}
+
+3.3333333333333335  -> upto 16 decimal digits
+3.3333333           -> upto 7 decimal digits
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(10 / 0);
+
+	}
+
+}
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.demo.corejava.training.FirstProgram.main(FirstProgram.java:7)
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(10 / 0.0);
+
+	}
+
+}
+
+Infinity
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(-10 / 0.0);
+
+	}
+
+}
+
+
+-Infinity
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte b = 10;
+		byte b1 = 20;
+
+		byte c = (byte) (b + b1);
+		System.out.println(c);
+
+	}
+
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		byte b = 122;
+		byte b1 = 8;
+
+		byte c = (byte) (b + b1);
+		System.out.println(c);
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
