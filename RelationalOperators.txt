@@ -1,0 +1,237 @@
+Relational operators:
+---------------------
+result : boolean (true or false)
+
+Compare
+
+
+A -> 10000
+B -> 11000
+
+A > B  false
+A == B  false
+A != B   true
+A >= B   false
+A <= B   true
+
+
+>   -> greater than
+
+<   -> Lesser than
+
+>=   -> Greater than or equal to
+
+<=   -> Lesser than or equal to
+
+==   -> equals to
+
+!=   -> Not equals to
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+	
+		int salA = 10000;
+		int salB = 11000;
+		
+		System.out.println(salA > salB);
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int salA = 10000;
+		double salB = 11000.0;
+
+		System.out.println(salA < salB);
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int salA = 10000;
+		int salB = 10000;
+
+		
+		//F T : T
+		System.out.println(salA <= salB);
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int salA = 10001;
+		int salB = 10000;
+		System.out.println(salA = salB);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int salA = 10000;
+		int salB = 10000;
+		System.out.println(salA == salB);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int salA = 10000;
+		int salB = 10000;
+		System.out.println(salA != salB);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		boolean result = true;
+		int sal = 10000;
+		System.out.println(sal <= result);
+	}
+
+}
+
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The operator <= is undefined for the argument type(s) int, boolean
+
+	at com.demo.corejava.training.FirstProgram.main(FirstProgram.java:9)
+
+
+	package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		boolean result = true;
+		int sal = 10000;
+		System.out.println(sal == result);
+	}
+
+}
+
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The operator == is undefined for the argument type(s) int, boolean
+
+	at com.demo.corejava.training.FirstProgram.main(FirstProgram.java:9)
+
+
+==  and !=  (boolean,boolean)
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		boolean result1 = true;
+		boolean result2 = false;
+		System.out.println(result1 == result2);
+		System.out.println(result1 != result2);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+public class FirstProgram {
+	public static void main(String[] args) {
+		int a=10;
+		int b=20;
+		int c=30;
+		System.out.println((a>=b) == (a<=c));
+		
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+
+		int a=10;
+		int b=10;
+
+		System.out.println(a>=b);
+		
+	}
+
+}
+
+
+a > b
+10 > 20
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println((1 + 2 - 3 * 3 / 2) == (3 + 2 + 1));
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println('a' == 'a');
+
+	}
+
+}
+
