@@ -1,0 +1,232 @@
+Relational operators:
+-----------------------
+> - Greater than
+<  - Lesser than
+>= - greater than or equals to
+<= - Lesser than pr equals to
+==  - Equals to 
+!=  - Not equals
+
+Compare the results
+except Boolean
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		System.out.println(a > b); // false
+		System.out.println(a < b); // true
+		System.out.println(a >= b); // false
+		System.out.println(a <= b); // true
+		System.out.println(a == b); // false
+		System.out.println(a != b); // false
+
+	}
+
+}
+
+
+false
+true
+false
+true
+false
+true
+
+Logical Operators:   To combine 2 conditions
+-------------------- 
+&  - Logical AND
+|  - Logiical OR
+^  - Exclusive OR
+
+&&  - Logical AND
+||  - Logical OR]
+
+
+int a,b,c
+
+AND &:
+
+T T T
+T F F
+F T F
+F F F
+
+OR  |
+
+T T T
+T F T
+F T T
+F F F
+
+
+Ex - OR
+
+T   F  - T
+F   t  - T
+T   t    F
+F   F    F
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		System.out.println((a > b) & (a > c));
+
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		System.out.println((b > a) | (b > c));
+
+	}
+
+}
+
+
+
+
+
+
+
+  > <
+  >= <=
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		sop(a>c | c>b);   // f | t   t 
+		sop(a<c |  b<c); //  t | t   t
+		sop(b>=a | b<=c); // t  | t  t 
+		sop(a<=c | c>=b); // t | t  t 
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		
+		System.out.println("a value before :"+a);
+		System.out.println("b value before :"+b);
+		
+		System.out.println((a<b) && (++a > ++b));
+		
+		System.out.println("a value after :"+a);
+		System.out.println("b value after :"+b);
+	}
+
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		
+		System.out.println("a value before :"+a);
+		System.out.println("b value before :"+b);
+		
+		System.out.println((b>a) || (++a > ++b));
+		
+		System.out.println("a value after :"+a);
+		System.out.println("b value after :"+b);
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		
+		System.out.println("a value before :"+a);
+		System.out.println("b value before :"+b);
+		
+		System.out.println((b<a) || (++a > ++b));
+		
+		System.out.println("a value after :"+a);
+		System.out.println("b value after :"+b);
+	}
+
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		System.out.println("a value before :" + a);
+		System.out.println("b value before :" + b);
+
+		System.out.println(!((a<c) || (++a > ++b))); //false
+
+		System.out.println("a value after :" + a);//11
+		System.out.println("b value after :" + b);//21
+	}
+
+}
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+		int c = 30;
+
+		System.out.println("a value before :" + a);
+		System.out.println("b value before :" + b);
+
+		System.out.println((a<c) ^ (b>c)); //false
+
+
+	}
+
+}
