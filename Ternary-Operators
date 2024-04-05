@@ -1,0 +1,104 @@
+ternary operators: (?:)
+--------------------
+
+(condition) ?  (expression1 ) : (expression2);
+
+condition is true : expression1
+condition is false : expression2
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		System.out.println((a > b) ? ("a is greater") : ("b is greater"));
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		System.out.println((a > b) ? (a+b) : (a-b));
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 40;
+		int b = 20;
+		int c=  30;
+
+		System.out.println((a > b) ?
+				((a>c) ? ("a is greater c") : ("a is not greater c")) 
+				:
+				(a-b));
+
+	}
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 20;
+		int b = 20;
+		int c = 30;
+
+		System.out.println((a > b) ? ((a > c) ? ("a is greater c") : ("a is not greater c"))
+				: ((b > c) ? ("b is greater than c") : ("b is greater not than c")));
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		 int a=10;
+		 int b=a++;
+		 int c= ++b + a--;
+		 int d =a+b+c;
+		 
+		 System.out.println(a); //10 10 11  11 10
+		 System.out.println(b);//11  10 11  10 11
+		 System.out.println(c);//22  21 19  20 22
+		 System.out.println(d);//43  41 41  41 40
+	}
+}
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		
+		int a=10;
+		int b=-(a);
+		
+		boolean result= true;
+		System.out.println(!(result));
+	}
+}
+
+
