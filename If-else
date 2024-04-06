@@ -1,0 +1,116 @@
+
+Control Statements:
+-------------------
+
+Conditional Statements:
+-------------------------
+
+if..else
+
+
+Syntax:
+------
+
+if(condition){
+	
+	//statements
+}
+
+else{
+	
+	//statements
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		if (a > b) {
+			System.out.println("Statement-1");
+			System.out.println("Statement-2");
+			System.out.println("Statement-3");
+		} else {
+			System.out.println("Statement-4");
+			System.out.println("Statement-5");
+		}
+
+	}
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		if (1+2*1==3) {
+			System.out.println("Statement-1");
+			System.out.println("Statement-2");
+			System.out.println("Statement-3");
+		} else {
+			System.out.println("Statement-4");
+			System.out.println("Statement-5");
+		}
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		if (a>b) {
+			System.out.println("Statement-1");
+			System.out.println("Statement-2");
+			System.out.println("Statement-3");
+		}
+
+		System.out.println("Hi");
+	}
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		if (a < b)
+			System.out.println("Statement-1");
+	      	System.out.println("Hi");
+	}
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		if (a < b)
+			System.out.println("Statement-1");
+		else
+	      	System.out.println("Hi");
+	
+		System.out.println("test");
+	}
+}
+
+
+
+
