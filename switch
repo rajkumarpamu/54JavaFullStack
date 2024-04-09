@@ -1,0 +1,222 @@
+data types
+Operators
+Control Statement:
+------------------
+
+Conditional based:
+----------------
+
+if(condition)
+{
+	//body
+}
+else{
+	//body
+}
+
+if condiiton is true : body of if wll be executed
+if condition is false : body of else will be executed
+
+if(condition)
+    sop("Hello World");
+    sop("Hello India");
+
+
+value based:
+------------
+
+If we want to execute any statement based on value we have use switch.
+
+switch(value){
+	
+
+   case value1 : statement;
+                break;
+
+   case value2 : statement;
+                break;
+
+   case value3 : statement;
+                break;
+
+   default : statemnet;
+             break;
+
+
+}
+
+
+package com.demo.controlstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		// reads an input
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your Input");
+		int value = sc.nextInt();
+
+		switch (value) {
+
+		case 1:
+			System.out.println(a + b);
+			break;
+		case 2:
+			System.out.println(a - b);
+			break;
+
+		case 3:
+			System.out.println(a * b);
+			break;
+
+		case 4:
+			System.out.println(a / b);
+			break;
+
+		case 5:
+			System.out.println(a % b);
+			break;
+
+		default:
+			System.out.println("No Input value matched");
+			break;
+
+		}
+
+	}
+
+}
+
+
+Note:
+----
+
+default is optional , if we wan to execute any default statement if no match found then only we require default statement else it is optional.
+
+Note:
+----
+
+Cannot switch on a value of type double. Only convertible int values, strings or enum variables are permitted
+
+package com.demo.controlstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		// reads an input
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your Week day");
+		String value = sc.next();
+
+		switch (value.toLowerCase()) {
+
+		case "monday":
+			System.out.println("First Day of the week");
+
+		case "tuesday":
+			System.out.println("Second Day of the week");
+			break;
+
+		case "wednesday":
+			System.out.println("Third Day of the week");
+
+		case "thursday":
+			System.out.println("Fouth Day of the week");
+			break;
+
+		case "friday":
+			System.out.println("Fifth Day of the week");
+			break;
+
+		default:
+			System.out.println("Its is week end");
+			break;
+
+		}
+
+	}
+
+}
+
+
+package com.demo.controlstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		char value = 'a';
+
+		switch (value) {
+
+		case 'a':
+			System.out.println("Its a vowel");
+			break;
+
+		case 'e':
+			System.out.println("Its a vowel");
+			break;
+
+		case 'i':
+			System.out.println("Its a vowel");
+			break;
+
+		case 'o':
+			System.out.println("Its a vowel");
+			break;
+
+		case 'u':
+			System.out.println("Its a vowel");
+			break;
+
+		default:
+			System.out.println("It is a consonant");
+			break;
+
+		}
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
