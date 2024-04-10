@@ -1,0 +1,254 @@
+if else:
+--------
+
+else if
+
+a,b,c -> max of a given nuber
+10,20,30 -> 30 is the max number
+
+if(condition)
+{
+	//body
+}
+else if(condition)
+{
+	//body
+}
+else if(condition)
+{
+   //body	
+}
+else{
+	//body
+}
+
+
+
+package com.demo.controlstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		int a, b, c;
+		a = 40;
+		b = 20;
+		c = 30;
+
+		if (a > b && a > c) {
+			System.out.println("a is max value");
+		} else if (b > a && b > c) {
+			System.out.println("b is max value");
+		} else {
+			System.out.println("c is max value");
+		}
+
+	}
+
+}
+
+
+
+package com.demo.controlstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		int a, b, c;
+		a = 40;
+		b = 20;
+		c = 30;
+
+		if (a > b) {
+			if (a > c) {
+				System.out.println("a is max value");
+			} else {
+				System.out.println("a is not a max value");
+			}
+		} else {
+			System.out.println("a is not a max value");
+		}
+
+	}
+
+}
+
+
+
+Loops:
+------
+If we want to execute any statement for repeatedly for multiple times  we have use loops.
+
+
+for loop
+
+while loop
+
+do while loop
+
+for each loop
+
+
+for loop:
+---------
+
+
+ Syntax:
+ -------
+
+ for(initailization ; condition ; inc/dec){
+   //statements
+ }
+
+
+package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("welcome to java");
+		}
+
+	}
+
+}
+
+
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+welcome to java
+
+
+package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 3; i++) 
+			System.out.println("welcome to java");
+		    System.out.println("Hi");
+		
+
+	}
+
+}
+
+\package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; true; i++)
+			System.out.println("welcome to java");
+
+	}
+
+}
+
+Note: 
+
+Conditin is always true , so it will genreate infinite loop
+
+package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; true; i++)
+			System.out.println("welcome to java");
+		System.out.println("test");
+
+	}
+
+}
+
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Unreachable code
+	at com.demo.controlstatements.App.main(App.java:9)package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; false; i++) {
+			System.out.println("welcome to java");
+		}
+		System.out.println("test");
+
+	}
+
+}
+
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Unreachable code
+
+	at com.demo.controlstatements.App.main(App.java:7)
+
+
+
+package com.demo.controlstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 3; i++) 
+			System.out.println("welcome to java");  //Loop Statement
+		System.out.println("test"); //Oridinary Statement
+		   
+	}
+
+}
+
+
+
+For loop :
+----------
+
+Nested Loop:
+-------------
+
+ for(initialization; condition; inc/dec){  //Outer loop
+
+         for(initialization; condition; inc/dec){  //Inner loop
+            //statenets
+         }
+
+		//statenets
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
