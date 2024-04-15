@@ -1,0 +1,201 @@
+
+Loops:
+------
+
+If we want iterate any statement for multipe number of times we have to use loops.
+
+for loop:
+---------
+
+
+for(initialzation; condition ; inc/dec){}
+
+initialization: start point
+condition : end of the loop
+inc/dec   : increase the start point
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		  for(int i=1;i<=10;i++) {
+          System.out.println("welcomem to java");
+		  }
+		
+	}
+}
+
+
+while(condition){
+	//statement
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int i = 1;
+
+		while (i <= 10) {
+			System.out.println("Welcome to java");
+			i++;
+		}
+
+
+	}
+}
+
+
+
+do..while
+
+
+do{
+	//statement
+}while(condition);
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		
+		int i=10;
+		
+		do {
+			System.out.println("welcome to java");
+			i++;
+		}while(i<=20);
+
+	}
+}
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				break;
+			System.out.println("welcome to java");
+		}
+
+		System.out.println("test");
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				continue;
+			System.out.println("welcome to java");
+		}
+
+		System.out.println("test");
+
+	}
+}
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				return;
+			System.out.println("welcome to java");
+		}
+
+		System.out.println("test");
+
+	}
+}
+
+
+123 = 1+2+3 = 6
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+	int number = 126;
+	System.out.println(number%10); //6
+	System.out.println(number/10); //12
+	number=12;
+	System.out.println(number%10);
+	System.out.println(number/10);
+	number=1;
+	System.out.println(number%10);
+	System.out.println(number/10);
+
+	}
+}
+
+
+
+
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int number = 1265;
+		int sum = 0;
+
+		while (number != 0) {
+			int reminder = number % 10;
+			sum = sum + reminder;
+			number = number / 10;
+		}
+
+		System.out.println("Sum is :" + sum);
+
+	}
+}
+
+package com.demo.corejava.training;
+
+public class FirstProgram {
+	public static void main(String[] args) {
+
+		int number = 434;
+		int temp = number;
+		int reverse = 0;
+
+		while (number != 0) {
+			int reminder = number % 10;
+			reverse = reverse * 10 + reminder;
+			number = number / 10;
+		}
+
+		if (temp == reverse)
+			System.out.println("Its a palindrome");
+		else
+			System.out.println("Its not a palindrome");
+
+	}
+}
+
+
+
+
+
+
+
