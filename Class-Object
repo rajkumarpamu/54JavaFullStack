@@ -1,0 +1,108 @@
+Object:
+-------
+
+Java is Class based object oreinted programming language.
+
+why object?
+Re usablity
+
+If there is a class there will be an object
+If no class , no object
+For a class we can create any number of objects
+
+public class FirstProgram{
+	
+
+}
+
+new keyword:
+-----------
+
+If we want to create an object we have to use new keyword.
+
+
+class FirstProgram{
+	
+
+}
+
+int a=10;
+
+
+FirstProgram fp =  new FirstProgram();
+
+A copy of class will be created inside Heap Area.
+
+Demo
+
+Demo d = new Demo();
+
+Sample
+
+Sample s= new Sample();
+
+
+String
+
+String str= new String();
+
+
+Dot opeartor:
+--------------
+
+.
+
+objectName.prpertyname;
+
+
+package com.demo.object;
+
+public class Customer {
+
+	String customerName= "raj";
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Customer cust = new Customer();
+		System.out.println(cust.customerName);
+
+	}
+}
+ 	
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Customer cust = new Customer();
+		System.out.println(cust.customerName);
+		
+		Customer cust1 = new Customer();
+		System.out.println(cust1.customerName);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
