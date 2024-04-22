@@ -1,0 +1,211 @@
+
+
+returntype methodName(){
+	
+}
+
+
+objectName.methodName();
+
+void add(){
+	
+}
+
+
+package com.demo.object;
+
+public class Addition {
+	int add(int a,int b) {
+		int c=a+b;
+		return c;
+	}
+}
+
+
+package com.demo.object;
+
+public class Max {
+	
+	int max(int a,int b) {
+		if(a>b)
+			return a;
+		else
+			return b;
+	}
+
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Max m = new Max();
+		int maxvalue =m.max(30, 20);
+		System.out.println(maxvalue);
+		
+
+	}
+}
+
+package com.demo.object;
+
+public class Max {
+
+	boolean max(int a, int b) {
+		if (a > b)
+			return true;
+		else
+			return false;
+	}
+
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Max m = new Max();
+		boolean result =m.max(20, 20);
+		System.out.println("Is Max :"+result);
+		
+
+	}
+}
+
+
+a is greater
+
+package com.demo.object;
+
+public class Max {
+
+	String max(int a, int b) {
+		if (a > b)
+			return "a is greater";
+		else
+			return "b is greater";
+	}
+
+}
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Max m = new Max();
+		String result =m.max(20, 20);
+		System.out.println(result);
+		
+
+	}
+}
+
+
+package com.demo.object;
+
+public class Addition {
+	double add(double a,int b) {
+		return a+b;
+	}
+}
+
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Addition m = new Addition();
+		double result = m.add(10.8,10);
+		System.out.println(result);
+		
+
+	}
+}
+
+
+package com.demo.object;
+
+public class Addition {
+
+	int addArray(int ar[]) {
+		int sum = 0;
+		for (int i = 0; i < ar.length; i++) {
+			sum = sum + ar[i];
+		}
+		return sum;
+	}
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Addition m = new Addition();
+		int ar[]= {10,20,30,40,50};
+		int result = m.addArray(ar);
+		System.out.println(result);
+		
+
+	}
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Addition m = new Addition();
+		int result = m.addArray(new int[] { 10, 20, 30, 40, 50 });
+		System.out.println(result);
+
+	}
+}
+
+
+package com.demo.object;
+
+public class Max {
+
+	String max(int a, int b) {
+		
+		return (a>b) ?  
+				"a is greater" : 
+					"b is greater" ;
+	}
+
+}
+
+
+package com.demo.object;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Max max = new Max();
+		String result = max.max(20, 21);
+		System.out.println(result);
+
+	}
+}
+
+
+
+Local variables:
+----------------
