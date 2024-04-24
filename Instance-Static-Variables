@@ -1,0 +1,212 @@
+package com.demo.variables;
+
+public class Student {
+
+	void studentDetails(String name, int age, String cname) {
+		System.out.println("Name is :" + name);
+		System.out.println("Age is :" + age);
+		System.out.println("College Name is :" + cname);
+	}
+
+}
+
+
+package com.demo.variables;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Student st = new Student();
+		st.studentDetails("raj", 30, "AshokiT");
+		st.studentDetails("raj", 30, "AshokiT");
+		st.studentDetails("raj", 30, "AshokiT");
+		st.studentDetails("raj", 30, "AshokiT");
+		st.studentDetails("raj", 30, "AshokiT");
+		
+	}
+	
+
+}
+
+
+package com.demo.variables;
+
+public class Student {
+	
+	
+	String cname="AshokIT";
+
+	void studentDetails(String name, int age) {
+		System.out.println("Name is :" + name);
+		System.out.println("Age is :" + age);
+		System.out.println("College Name is :" + cname);
+	}
+
+}
+
+
+package com.demo.variables;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		Student st = new Student();
+		st.studentDetails("raj", 30);
+		st.studentDetails("ravi", 31);
+		st.studentDetails("rahul", 32);
+
+	}
+	
+
+}
+
+
+package com.demo.variables;
+
+public class Student {
+	
+	//Instance Variable
+	String cname="AshokIT";
+
+	//Local variables
+	void studentDetails(String name, int age) {
+		System.out.println("Name is :" + name);
+		System.out.println("Age is :" + age);
+		System.out.println("College Name is :" + cname);
+	}
+	
+	public static void main(String[] args) {
+		
+		Student st = new Student();
+		st.studentDetails("raj", 30);
+		st.studentDetails("ravi", 31);
+		st.studentDetails("rahul", 32);
+
+	}
+
+}
+
+
+Instance Variables:
+-------------------
+
+
+package com.demo.variables;
+
+public class App {
+
+	int a;
+
+	public static void main(String[] args) {
+
+		App app = new App();
+		System.out.println(app.a);
+
+	}
+
+}
+
+
+package com.demo.variables;
+
+public class App {
+
+	int a=10;
+
+	public static void main(String[] args) {
+
+		App app = new App(); //Copy-1
+		System.out.println(app.a);
+		
+		App app1 = new App();//Copy-2
+		System.out.println(app1.a);
+		
+		App app2 = new App();//Copy-3
+		System.out.println(app2.a);
+
+	}
+
+}
+
+
+
+package com.demo.variables;
+
+public class App {
+
+	int a=10;
+	
+	void printA() {
+		System.out.println(a);
+	}
+
+	public static void main(String[] args) {
+
+		App app = new App(); //Copy-1
+		app.printA();
+
+
+	}
+
+}
+
+
+
+package com.demo.variables;
+
+public class Student {
+	
+	//Instance Variable
+	static String cname="AshokIT";
+
+	//Local variables
+	void studentDetails(String name, int age) {
+		System.out.println("Name is :" + name);
+		System.out.println("Age is :" + age);
+		System.out.println("College Name is :" + cname);
+	}
+	
+}
+
+
+package com.demo.variables;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Student student = new Student();
+		student.studentDetails("raj", 30);
+		
+		Student student1 = new Student();
+		student.studentDetails("raj", 30);
+	}
+}
+
+
+package com.demo.variables;
+
+public class Student {
+
+	// Instance Variable
+	static String cname = "AshokIT";
+
+	
+
+}
+
+
+package com.demo.variables;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		System.out.println(Student.cname);
+
+	}
+}
+
+
