@@ -1,0 +1,156 @@
+
+package com.demo.variables;
+
+public class App {
+
+	// static variable
+	static int x;
+
+	// static block
+	static {
+		x = 10;
+		System.out.println("static block :" + x);
+	}
+
+	static void m1() {
+		System.out.println("we are in m1");
+	}
+
+	// static method
+	public static void main(String[] args) {
+		App.m1();
+	}
+
+}
+
+
+
+package com.demo.variables;
+
+public class App {
+
+	// instance variable
+	int x=20;
+	// instance block
+	{
+		int x = 10;
+		System.out.println("instance block :" + x);
+	}
+	void m1() {
+		System.out.println("we are in m1 :"+x);
+	}
+	// static method
+	public static void main(String[] args) {
+		
+		App app = new App();
+		app.m1();
+		app.m1();
+		app.m1();
+
+	}
+
+}
+
+
+
+
+package com.demo.variables;
+
+public class App {
+
+	int x = 20;
+	static int y=30;
+
+	static {
+		System.out.println("static block :" + y);
+	}
+
+	static void m2() {
+		System.out.println("we are in m1");
+	}
+
+	{
+		int x = 10;
+		System.out.println("instance block :" + x);
+	}
+
+	void m1() {
+		System.out.println("we are in m1 :" + x);
+	}
+
+	// static method
+	public static void main(String[] args) {
+
+		App app = new App();
+		app.m1();
+		App.m2();
+
+	}
+
+}
+
+
+
+String:
+------
+
+age
+age()
+AGE
+Age()
+Age
+
+
+package com.demo.variables;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		String str = new String("welcome to java");
+		System.out.println(str);
+
+		char c = 'x';
+		System.out.println(c);
+
+	}
+
+}
+
+
+package com.demo.variables;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		String str = new String("raj");
+		System.out.println(str);
+		//Returns the char value at the specified index.
+		char c = str.charAt(2);
+		System.out.println(c);
+		
+		String s1 = str.concat("kumar");
+		System.out.println(s1);
+
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
