@@ -1,0 +1,80 @@
+
+String object:
+-----------------
+String str = new String("sachin");
+
+Memory Allocation:
+--------------------
+Heap Area
+
+De-Alocation:
+-------------
+Garbage Collector
+
+
+String literal:
+---------------
+
+String str = "sachin";
+
+Memory Allocation:
+--------------------
+String Constant Pool (Heap Area)
+
+De-Alocation:
+-------------
+
+SCP
+
+package com.demo.strings;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		String str1 = new String("raj");
+		String str2 = new String("raj");
+
+		String str3 = "raj";
+		String str4 = "raj";
+
+		System.out.println(str1.equals(str2));
+		System.out.println(str2.equals(str3));
+		System.out.println(str3.equals(str4));
+		System.out.println(str1 == str2);// reference check
+		System.out.println(str1 == str3);// reference check
+		System.out.println(str3 == str4);// reference check
+
+	}
+
+}
+
+Note:
+
+When the intern method is invoked, if the pool already contains a string equal to this String object as determined by the equals(Object) method, then the string from the pool is returned. Otherwise, this String object is added to the pool and a reference to this String object is returned.
+
+
+package com.demo.strings;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		String str1 = new String("raj");
+		System.out.println(str1);
+		
+		String scpObject = str1.intern();
+		System.out.println(scpObject);
+		
+	}
+
+}
+
+
+Strings are constant; 
+their values cannot be changed after they are created. 
+Because String objects are immutable they can be shared.
+
+
+
+
