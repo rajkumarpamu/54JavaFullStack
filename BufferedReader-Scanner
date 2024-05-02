@@ -1,0 +1,161 @@
+
+How to read Input?
+-----------------
+
+System:
+
+The System class contains several useful class fields and methods. It cannot be instantiated.
+
+
+static int a;
+static InputStream	in;
+static String name="sachin
+"
+;
+
+package com.demo.strings;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+		InputStream input = System.in;
+		System.out.println("Enter the details");
+		int ch = input.read();
+		System.out.println((char) ch);
+
+		System.out.println("Enter the details");
+		int i1 = System.in.read();
+		System.out.println((char) i1);
+
+	}
+
+}
+
+
+
+package com.demo.strings;
+
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+
+		 PrintStream ps=  System.out;
+		 //Prints a boolean and then terminate the line.
+		 ps.println(false);
+
+		 System.out.print(false);
+	}
+
+}
+
+
+package com.demo.strings;
+
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+		PrintStream ps = System.err;
+		// Prints a boolean and then terminate the line.
+		ps.println(false);
+
+		System.err.print(false);
+	}
+
+}
+
+
+Scanner:
+----------
+
+package com.demo.strings;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Name");
+		String name = sc.next();
+		System.out.println("Enter Course");
+		String course = sc.next();
+		System.out.println("Name :"+name);
+		System.out.println("Course :"+course);
+		System.out.println("Fee details  :"+10000);
+		
+	}
+
+}
+
+
+package com.demo.strings;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Name");
+		String name = sc.next();
+		System.out.println("Enter Year of birth");
+		int age  = sc.nextInt();
+		System.out.println("Enter Course");
+		String course = sc.next();
+		
+		System.out.println("Name :"+name);
+		System.out.println("Year of Birth :"+age);
+		System.out.println("Course :"+course);
+		System.out.println("Fee details  :"+10000);
+		
+	}
+
+}
+
+BufferedReader:
+-----------------
+Reads text from a character-input stream]
+
+For top efficiency, consider wrapping an InputStreamReader within a BufferedReader. For example:
+
+ BufferedReader in
+   = new BufferedReader(new InputStreamReader(System.in));
+
+   package com.demo.strings;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class App {
+
+	public static void main(String[] args) throws IOException {
+
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(in);
+
+		System.out.println("Enter Your Course Name");
+		String name = br.readLine();
+		System.out.println("Your Course Name is :" + name);
+
+	}
+
+}
+99
+
