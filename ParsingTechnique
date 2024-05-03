@@ -1,0 +1,117 @@
+Parsing Technique:
+----------------
+
+String - int
+
+static int	parseInt(String s)
+Parses the string argument as a signed decimal integer.
+
+static double	parseDouble(String s)
+
+
+package com.demo.strings;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class App {
+	static int perTicketPrice=200;
+	static int coolDrinkPrice=50;
+
+	public static void main(String[] args) throws IOException {
+		
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(in);
+		System.out.println("Enter Your Movie  Name");
+		String movieName = br.readLine();
+		System.out.println("Enter No of Tickets");
+		String noOfTickets = br.readLine();
+		int totalTickets = Integer.parseInt(noOfTickets);
+		System.out.println("Enter No of Cool Drinks");
+		String noOfCoolDrinks = br.readLine();
+		int totalCoolDrinks = Integer.parseInt(noOfCoolDrinks);
+		System.out.println("Movie Name :"+movieName );
+		System.out.println("Total Bill Amount :"+(totalTickets*perTicketPrice + totalCoolDrinks*coolDrinkPrice));
+		
+
+	}
+
+}
+
+
+package com.demo.strings;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class App {
+	static int perTicketPrice = 200;
+	static int coolDrinkPrice = 50;
+
+	public static void main(String[] args) throws IOException {
+
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(in);
+		System.out.println("Enter Name");
+		String movieName = br.readLine();
+		System.out.println("Enter Salary");
+		String salary = br.readLine();
+		double totalsalary = Double.parseDouble(salary);
+
+		if (totalsalary > 10000)
+			System.out.println("Eligible for laon");
+		else
+			System.out.println("Not eligible for laon");
+
+	}
+
+}
+
+Enter Name
+raj
+Enter Salary
+test
+
+
+
+Exception in thread "main" java.lang.NumberFormatException: For input string: "test"
+	at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2043)
+	at sun.misc.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.lang.Double.parseDouble(Double.java:538)
+	at com.demo.strings.App.main(App.java:18)
+
+
+	Fibnocci series:
+	------------------
+
+	0   1  1  2   3  5  8  13  21 34
+
+
+package com.demo.strings;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class App {
+	
+	public static void main(String[] args) throws IOException {
+
+		
+		int firstValue=0; //1 1  2
+		int secondValue=1; //1 2 3
+		int thirdvalue ;//1 2 3  5
+		System.out.print(firstValue +" "+secondValue);
+		for(int i=2;i<10;i++) {
+			thirdvalue = firstValue+secondValue;
+			System.out.print(" "+thirdvalue+" ");
+			firstValue= secondValue;
+			secondValue=thirdvalue;
+		}
+
+
+	}
+
+}
