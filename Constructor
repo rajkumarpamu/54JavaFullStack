@@ -1,0 +1,127 @@
+Constructor:
+------------
+
+Its a special type of method , that is invoked during object creation time.
+
+1) Constructor name should be same as class name.
+2) It should not contain any return type not even void.
+
+
+Intialization
+-------------
+
+package com.demo.constructors;
+
+public class Employee {
+
+	// Constructor
+	Employee() {
+		System.out.println("Employee Constructor is called");
+	}
+
+	public static void main(String[] args) {
+
+		Employee employee = new Employee();
+
+	}
+}
+
+
+package com.demo.constructors;
+
+public class Employee {
+
+	int a;
+	Employee(){
+		a=0;
+	}
+
+	public static void main(String[] args) {
+
+		Employee employee = new Employee();
+		System.out.println(employee.a);
+
+	}
+}
+
+
+D:\54-JavaFullStack>javap Employee
+Compiled from "Employee.java"
+public class Employee {
+  int a;
+  public Employee();
+  public static void main(java.lang.String[]);
+}
+
+class Employee{
+	
+
+}
+
+package com.demo.constructors;
+
+public class Employee {
+
+	int a;
+
+	// User defined Constructor - Non paramterized Constructor
+	Employee() {
+		a = 100;
+	}
+
+	public static void main(String[] args) {
+
+		Employee employee = new Employee();
+		System.out.println(employee.a);
+
+	}
+}
+
+
+Use case-1
+-----------
+
+Duirng Decleration time
+int a=10;
+
+Use case-2
+-----------
+
+	// User defined Constructor
+	Employee() {
+		a = 100;
+	}
+
+	Use case-3
+-----------
+
+	// User defined Constructor , Parameterized Constructor
+	Employee(int x) {
+		a = x;
+	}
+
+	package com.demo.constructors;
+
+public class Employee {
+
+	int a;
+	String name;
+
+	// User defined Constructor , Parameterized Constructor
+	Employee(int x, String n) {
+		name = n;
+		a = x;
+	}
+
+	public static void main(String[] args) {
+
+		Employee employee = new Employee(50, "sachin");
+		System.out.println(employee.a);
+		System.out.println(employee.name);
+
+	}
+}
+
+
+
+String s= new String("sachin");
