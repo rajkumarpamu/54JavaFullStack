@@ -1,0 +1,12 @@
+1)Create a class AshokIt, and store the 5 students (roll numbers,student_names)
+2)Create a class Employee and store the (employee names, employee salary, working or not).
+3)Write a program to print the Addition of two given no’s.
+4)Write a program to print the Subtraction of two given no’s.
+5)Write a program to print the Remainder of two given no’s
+6)Write a program to print the Quotient of two given no’s
+7)Write a program to print the   Multiplication of two given no’s
+8)Write a Program to swap two numbers without using a third variable.
+9)Create an Employee class, take the 2 employees' salaries, add their salaries, and store them in the third variable.
+10)Create a class AshokIt, create all the fields with all datatypes, and print it into the console.
+
+

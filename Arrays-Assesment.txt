@@ -1,0 +1,352 @@
+1)What is the index of the last element in an array of size n?
+a) n
+b) n - 1
+c) n + 1
+d) 0
+
+Answer: b) n - 1
+-------------------------------------------------------------------------
+2)What is the time complexity of accessing an element in an array by index in Java?
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n^2)
+
+Answer: a) O(1)
+----------------------------------------------------------------------------
+3)Which method is used to find the length of an array in Java?
+a) length()
+b) size()
+c) getSize()
+d) length
+
+Answer: d) length
+-------------------------------------------------------------------------------------
+4)What is the output of the following code?
+
+
+int[] numbers = new int[5];
+System.out.println(numbers[0]);
+
+a) 0
+b) null
+c) Compiler Error
+d) Runtime Error
+
+Answer: a) 0
+-------------------------------------------------------------
+5)Which of the following is a correct way to initialize an array in Java?
+a) int[] numbers = new int[5] {1, 2, 3, 4, 5};
+b) int[] numbers = {1, 2, 3, 4, 5};
+c) int[] numbers = new int[5] {1, 2, 3, 4, 5};
+d) int[5] numbers = {1, 2, 3, 4, 5};
+
+Answer: b) int[] numbers = {1, 2, 3, 4, 5};
+--------------------------------------------------------------------------------
+6)Which method is used to copy elements from one array to another in Java?
+a) copy()
+b) System.arrayCopy()
+c) copyArray()
+d) arrayCopy()
+
+Answer: b) System.arrayCopy()
+-------------------------------------------------------------------------------------
+7)What will be the output of the following code?
+java
+Copy code
+int[] numbers = {1, 2, 3, 4, 5};
+int sum = 0;
+for (int i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}
+System.out.println(sum);
+a) 10
+b) 15
+c) 5
+d) Compilation Error
+
+Answer: b) 15
+-------------------------------------------------------------------
+8)What is the output of the following code?
+
+int[] arr = {1, 2, 3, 4, 5};
+System.out.println(arr[5]);
+a) 5
+b) Runtime Error
+c) 0
+d) Compilation Error
+
+Answer: b) Runtime Error
+--------------------------------------------------------------------
+9)Which of the following statements is true about Java arrays?
+a) Arrays in Java can store elements of different data types.
+b) Arrays in Java are dynamically resizable.
+c) Arrays in Java are always passed by reference.
+d) Arrays in Java can only store primitive data types.
+
+Answer: c) Arrays in Java are always passed by reference.
+------------------------------------------------------------------------
+10)What is the default value of an element in an integer array in Java if it is not explicitly initialized?
+a) 0
+b) -1
+c) null
+d) It depends on the compiler
+
+Answer: a) 0
+-----------------------------------------------------------------------------------------------
+11)What will be the output of the following code?
+
+int[] numbers = {1, 2, 3, 4, 5};
+numbers[0] = numbers[numbers.length - 1];
+System.out.println(numbers[0]);
+a) 1
+b) 5
+c) 4
+d) Compilation Error
+
+Answer: b) 5
+-----------------------------------------------------------------------------
+12)Which method is used to find the index of a specific element in an array in Java?
+a) indexOf()
+b) findIndex()
+c) search()
+d) Arrays.binarySearch()
+
+Answer: a) indexOf()
+---------------------------------------------------------------------
+13)What is the output of the following code?
+
+int[] arr = new int[5];
+System.out.println(arr);
+a) [0, 0, 0, 0, 0]
+b) 0
+c) Compiler Error
+d) Runtime Error
+
+Answer: c) Compiler Error
+---------------------------------------------------
+14)Which of the following methods is used to fill an array with a specific value in Java?
+a) fill()
+b) Arrays.fill()
+c) initialize()
+d) setAll()
+
+Answer: b) Arrays.fill()
+--------------------------------------------------------------------------------
+15)What will be the output of the following code?
+
+int[] arr1 = {1, 2, 3};
+int[] arr2 = arr1;
+arr1[0] = 5;
+System.out.println(arr2[0]);
+a) 1
+b) 5
+c) Compilation Error
+d) Runtime Error
+
+Answer: b) 5
+-------------------------------------------------------------
+16)Which of the following methods is used to convert an array to a string representation in Java?
+a) Arrays.toString()
+b) arrayToString()
+c) convertToString()
+d) toStringArray()
+
+Answer: a) Arrays.toString()
+------------------------------------------------------------------
+17)What is the output of the following code?
+
+int[] arr = {1, 2, 3, 4, 5};
+int[] newArr = Arrays.copyOf(arr, 3);
+System.out.println(newArr.length);
+a) 3
+b) 5
+c) Compilation Error
+d) Runtime Error
+
+Answer: a) 3
+-------------------------------------------------------------------
+18)What will be the output of the following code?
+
+
+int[] arr1 = {1, 2, 3};
+int[] arr2 = new int[3];
+System.arraycopy(arr1, 0, arr2, 0, arr1.length);
+System.out.println(Arrays.equals(arr1, arr2));
+a) true
+b) false
+c) Compilation Error
+d) Runtime Error
+
+Answer: a) true
+--------------------------------------------------------------------------------------
+19)What is the output of the following code?
+java
+Copy code
+int[][] matrix = {{1, 2}, {3, 4}, {5, 6}};
+System.out.println(matrix[1][1]);
+a) 1
+b) 2
+c) 3
+d) 4
+
+Answer: d) 4
+---------------------------------------------------------------------
+20)What will be the output of the following code?
+
+int[] arr = {1, 2, 3, 4, 5};
+for (int i = 0; i < arr.length; i++) {
+    arr[i] = arr[arr.length - 1 - i];
+}
+System.out.println(Arrays.toString(arr));
+a) [5, 4, 3, 2, 1]
+b) [1, 2, 3, 4, 5]
+c) [1, 5, 3, 4, 5]
+d) Compilation Error
+
+Answer: a) [5, 4, 3, 2, 1]
+--------------------------------------------------------------------------------
+21)Which of the following methods is used to check if an array contains a specific element in Java?
+a) contains()
+b) hasElement()
+c) search()
+d) Arrays.binarySearch()
+
+Answer: d) Arrays.binarySearch()
+---------------------------------------------------------------------------------------
+22)What is the output of the following code?
+
+int[] arr = {1, 2, 3};
+int[][] matrix = {arr, arr, arr};
+matrix[0][0] = 5;
+System.out.println(matrix[2][0]);
+a) 1
+b) 2
+c) 3
+d) 5
+
+Answer: d) 5
+------------------------------------------------------------
+23)Which method is used to convert a primitive array to a List in Java?
+a) toList()
+b) asList()
+c) convertToList()
+d) arrayToList()
+
+Answer: b) asList()
+-----------------------------------------------------------------------
+24)Which of the following methods is used to compare two arrays for equality in Java?
+a) Arrays.equals()
+b) equals()
+c) == operator
+d) compareArrays()
+
+Answer: a) Arrays.equals()
+-----------------------------------------------------------------------------------------
+25)What will be the output of the following code?
+java
+Copy code
+int[] arr1 = {1, 2, 3};
+int[] arr2 = {1, 2, 3};
+System.out.println(arr1 == arr2);
+a) true
+b) false
+c) Compilation Error
+d) Runtime Error
+
+Answer: b) false
+------------------------------------------------------------------------------------------
+26)What is the output of the following code?
+
+int[] arr = new int[]{1, 2, 3, 4, 5};
+System.out.println(arr[arr.length]);
+a) 0
+b) 5
+c) Compilation Error
+d) Runtime Error
+
+Answer: d) Runtime Error
+----------------------------------------------------------------------------
+27)What will be the output of the following code?
+java
+Copy code
+int[] arr = {1, 2, 3, 4, 5};
+System.out.println(arr.length);
+arr = Arrays.copyOf(arr, 10);
+System.out.println(arr.length);
+
+a) 5, 10
+b) 5, 5
+c) Compilation Error
+d) Runtime Error
+
+Answer: a) 5, 10
+----------------------------------------------------------
+28)What is the output of the following code?
+
+int[] arr = {1, 2, 3, 4, 5};
+int[] newArr = Arrays.copyOfRange(arr, 1, 3);
+System.out.println(Arrays.toString(newArr));
+a) [2, 3]
+b) [1, 2]
+c) [3, 4]
+d) Compilation Error
+
+Answer: a) [2, 3]
+--------------------------------------------------------------------------
+29)What will be the output of the following code?
+
+int[] arr = {1, 2, 3};
+int[][] matrix = {arr.clone(), arr.clone(), arr.clone()};
+matrix[0][0] = 5;
+System.out.println(matrix[2][0]);
+
+a) 1
+b) 2
+c) 3
+d) 5
+
+Answer: a) 1
+
+---------------------------------------------------------------------------
+30)What is the purpose of resizing the underlying array in a dynamic array?
+a) To reduce memory usage
+b) To improve time complexity of array operations
+c) To prevent memory fragmentation
+d) To accommodate more elements as the array grows
+
+Answer: d) To accommodate more elements as the array grows
+--------------------------------------------------------------------------
+31)Mention atleast 3 Exceptions on arrays, And explain on what scenariao.
+-----------------------------------------------------------------------
+32)What is the purpose of an array index?
+a) To store the value of an element
+b) To uniquely identify each element in the array
+c) To determine the data type of the array
+d) To control the size of the array
+Answer: b) To uniquely identify each element in the array
+-------------------------------------------------------------------------
+33)Which of the following operations can be performed efficiently on arrays?
+a) Insertion and deletion of elements at arbitrary positions
+b) Sorting elements in descending order
+c) Searching for a specific element
+d) Traversing elements in reverse order
+
+Answer: c) Searching for a specific element
+---------------------------------------------------------------------------------------------
+34)What is a multidimensional array?
+a) An array that can only store integers
+b) An array that stores elements in multiple rows and columns
+c) An array with a fixed size that cannot be changed
+d) An array that can only store elements of different data types
+Answer: b) An array that stores elements in multiple rows and columns
+--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

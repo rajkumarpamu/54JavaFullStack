@@ -1,0 +1,25 @@
+1)Create a class AshokIt, with the help of Arithmetic operators at least do 3 types of examples.
+2)public class AshokIt {
+	public static void main(String[] args) {
+		int x = 0, y = 7;  
+		if (x++ + y++) {  // Error in line 1
+		    System.out.println("At least one value is non-zero");  
+		}  
+		else {
+			System.out.println("Welcome");
+		}
+	}
+}
+3)With the help of the pre-increment operator, Give at least 3 examples by assigning multiple variables.
+4)With the help of the pre-decrement operator, Give at least 3 examples by assigning multiple variables.
+5)With the help of the post-decrement operator, Give at least 3 examples by assigning multiple variables.
+6)With the help of the post-increment operator, Give at least 3 examples by assigning multiple variables.
+7)Create a class AshokIt, with the help of Relationl operators at least do 3 types of examples.
+8)Create a class AshokIt, with the help of Logical operators at least do 3 types of examples.
+9)Create a class AshokIt, with the help of a new Operator create an Object of AshokItClass.
+10)Create 2 class(AshokIt, JavaDeveloper). Inside the AshokIt class create an Object for JavaDeveloper class with the help of the new Operator.
+11)Create a class AshokIt, and Give me the 3 examples of BitWiseOperators.
+12)Create a class AshokIt, and Give me the 3 examples of conditional operators.
+13)Create a class AshokIt, With the help of the dot operator print the values in the console
+14)Create a class AshokIt, With the help of the dot operator call the method into another method
+
